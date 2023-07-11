@@ -1,0 +1,1 @@
+export const DropdownMenuData = ["About", "Discover", "Services", "Sign Up"]
