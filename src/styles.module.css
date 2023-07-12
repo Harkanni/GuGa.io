@@ -312,8 +312,26 @@ header .appHeader {
   .premium .imageContainer {
     width: 50%;
     height: 50%;
-    /* background: red; */
     margin: 0;
+  }
 
+  /* Service cards */
+  .serviceCardContainer {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 10rem 5rem;
+  }
+  .serviceCard {
+    width: 30%;
+    min-height: 50vh;
+    transition: scale .25s ease-in-out;
+    gap: 2rem;
+    cursor: pointer;
+  }
+  .serviceCard:hover {
+    scale: 1.05;
   }
 }

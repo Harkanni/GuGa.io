@@ -5,9 +5,11 @@ export const Services = ({ serviceCardData }) => {
   return (
     <div className={styles.services}>
       <h1>Our Services</h1>
-      {serviceCardData.map((cardData, id) => (
-        <ServiceCard key={id} cardData={cardData}></ServiceCard>
-      ))}
+      <div className={styles.serviceCardContainer}>
+        {serviceCardData.map((cardData, id) => (
+          <ServiceCard key={id} cardData={cardData}></ServiceCard>
+        ))}
+      </div>
     </div>
   );
 };
