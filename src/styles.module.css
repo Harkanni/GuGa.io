@@ -80,6 +80,10 @@ header .appHeader {
   cursor: pointer;
 }
 
+.nav button {
+  display: none;
+}
+
 .nav .navContentContainer {
   display: none;
 }
@@ -287,4 +291,29 @@ header .appHeader {
   }
 
   /* HEADER CONTENT */
+  .headerContent {
+    width: 50%;
+  }
+
+  /* PREMIUM CARDS */
+  .premium {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15rem 7rem;
+  }
+  .premium:nth-child(2){
+    flex-direction: row-reverse;
+  }
+
+  .premium .text {
+    width: 45%;
+  }
+  .premium .imageContainer {
+    width: 50%;
+    height: 50%;
+    /* background: red; */
+    margin: 0;
+
+  }
 }
