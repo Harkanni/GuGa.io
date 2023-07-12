@@ -321,17 +321,30 @@ header .appHeader {
     flex-direction: row !important;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
     padding: 2rem 10rem 5rem;
   }
   .serviceCard {
     width: 30%;
     min-height: 50vh;
     transition: scale .25s ease-in-out;
-    gap: 2rem;
     cursor: pointer;
   }
   .serviceCard:hover {
     scale: 1.05;
   }
+
+  /* FOOTER */
+  .footerLink {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 0 !important;
+  }
+
+  .footerLinkGroup {
+    justify-content: space-around !important;
+    /* background-color: #000; */
+    min-height: 35vh;
+  }
+
 }
