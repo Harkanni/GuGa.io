@@ -49,7 +49,7 @@ const Header = ({currentSection, activeNav, showSidebar, setshowSidebar, navBgCo
           >
             <FontAwesomeIcon icon={faBars} style={{ color: '#ffffff' }} />
           </div>
-          <Button text={'Sign In'}></Button>
+          <Button specialStyle='smallBtn' text={'Sign In'}></Button>
         </nav>
         <div className={styles.headerContent}>
           <h1>Experience the guga</h1>

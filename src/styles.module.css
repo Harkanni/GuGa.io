@@ -14,6 +14,22 @@ body {
   min-height: 100vh;
 }
 
+/* HELPER CLASSES */
+.bgNone {
+  background: none !important;
+}
+.bgDark {
+  background: #000 !important;
+  z-index: 100000;
+}
+.smallBtn {
+  min-width: 30px !important;
+  font-size: 1rem !important;
+  padding: .6rem 1.2rem !important;
+  background-color: red;
+}
+/*  */
+
 .dropDownMenuActive,
 .dropDownMenuFalse {
   min-height: 100vh;
@@ -70,9 +86,11 @@ header .appHeader {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #000;
   color: whitesmoke;
   padding: 1.5rem;
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
 }
 
 .nav .logo {
@@ -88,6 +106,7 @@ header .appHeader {
 
 .nav button {
   display: none;
+  /* display: none !important; */
 }
 
 .nav .navContentContainer {
@@ -274,13 +293,7 @@ header .appHeader {
     position: fixed;
     padding-block: 0 !important;
   }
-  .bgNone {
-    background: none !important;
-  }
-  .bgDark {
-    background: #000 !important;
-    z-index: 100000;
-  }
+  
   .nav .navContentContainer {
     display: block;
     padding: 0 !important;
