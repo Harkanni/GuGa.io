@@ -28,7 +28,8 @@ export const createAnAccountData = {
   p: "Get everything set up and ready in under 10 minutes. All you need to do is add your information and you're ready to go.",
   imgUrl: "https://template-company-website.netlify.app/static/media/svg-3.0b88cfb5800c2ef598d3d5917089fed7.svg",
   btnText: "Start Now",
-  btnBgColor: "orange"
+  btnBgColor: "orange",
+  id: "signup"
 }
 
 export const ServiceCardData = [

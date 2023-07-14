@@ -9,13 +9,37 @@ function App() {
 
   const [showSidebar, setshowSidebar] = useState(false);
 
+  const [currentSection, setcurrentSection] =
+    useState(true);
+
+  const activeNav = {
+    borderBottom: 3,
+    borderBottomColor: 'rebeccapurple',
+    borderBottomStyle: 'solid'
+  };
+
   useEffect(() => {
     window.addEventListener('scroll', () => {
-      console.log('scroll triggered');
+      // console.log('scroll triggered');
       if (window.scrollY > 100) {
         setnavBgColor(true);
       } else {
         setnavBgColor(false);
+      }
+
+      const sections = document.querySelectorAll('section');
+      sections.forEach((section) => {
+        const sectionTopOffset = section.offsetTop;
+        // const sectionHeight = section.offsetHeight;
+        if (window.scrollY >= sectionTopOffset) {
+          setcurrentSection(section.id)
+        } else if (window.scrollY < 100) {
+          setcurrentSection(false)
+        }
+      });
+
+      return () => {
+        window.removeEventListener('scroll')
       }
     });
   }, []);
@@ -31,6 +55,8 @@ function App() {
               setnavBgColor={setnavBgColor}
               showSidebar={showSidebar}
               setshowSidebar={setshowSidebar}
+              activeNav={activeNav}
+              currentSection={currentSection}
             ></Home>
           }
         ></Route>

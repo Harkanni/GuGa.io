@@ -13,7 +13,7 @@ import { FooterSocials } from '../components/FooterSocial';
 import { DropDownMenu } from '../components/DropDownMenu';
 // import { useEffect, useState } from 'react';
 
-export const Home = ({ showSidebar, setshowSidebar, navBgColor, setnavBgColor }) => {
+export const Home = ({currentSection, activeNav, showSidebar, setshowSidebar, navBgColor, setnavBgColor }) => {
   
 
   return (
@@ -28,6 +28,8 @@ export const Home = ({ showSidebar, setshowSidebar, navBgColor, setnavBgColor })
         setshowSidebar={setshowSidebar}
         navBgColor={navBgColor}
         setnavBgColor={setnavBgColor}
+        activeNav={activeNav}
+        currentSection={currentSection}
       ></Header>
 
       <>
@@ -56,6 +58,7 @@ export const Home = ({ showSidebar, setshowSidebar, navBgColor, setnavBgColor })
           bgColor={createAnAccountData.bgColor}
           imgUrl={createAnAccountData.imgUrl}
           text={createAnAccountData.btnText}
+          id={createAnAccountData.id}
         ></ProductCard>
       </>
 

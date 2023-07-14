@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import {  } from '@fortawesome/free-brands-svg-icons';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
-const Header = ({ showSidebar, setshowSidebar, navBgColor, setnavBgColor }) => {
+const Header = ({currentSection, activeNav, showSidebar, setshowSidebar, navBgColor, setnavBgColor }) => {
   const handleClick = (event) => {
     console.log('Clicked to show sidebar');
     setshowSidebar(!showSidebar);
@@ -29,17 +29,17 @@ const Header = ({ showSidebar, setshowSidebar, navBgColor, setnavBgColor }) => {
           <div className={styles.logo}>guga</div>
           <div className={styles.navContentContainer}>
             <ul className={styles.navContent}>
-              <li>
-                <a href='#about'>About</a>
+              <li id='navItem'>
+                <a style={currentSection === "about"? activeNav : {}} href='#about'>About</a>
               </li>
-              <li>
-                <a href='#discover'>Discover</a>
+              <li id='navItem'>
+                <a style={currentSection === "discover"? activeNav : {}} href='#discover'>Discover</a>
               </li>
-              <li>
-                <a href='#services'>Services</a>
+              <li id='navItem'>
+                <a style={currentSection === "services"? activeNav : {}} href='#services'>Services</a>
               </li>
-              <li>
-                <a href='#signup'>Sign Up</a>
+              <li id='navItem'>
+                <a style={currentSection === "signup"? activeNav : {}} href='#signup'>Sign Up</a>
               </li>
             </ul>
           </div>
