@@ -14,8 +14,10 @@ function App() {
 
   const activeNav = {
     borderBottom: 3,
-    borderBottomColor: 'rebeccapurple',
-    borderBottomStyle: 'solid'
+    borderBottomColor: '#f39540',
+    borderBottomStyle: 'solid',
+    transitionProperty: 'border-bottom',
+    transitionDelay: '.2s'
   };
 
   useEffect(() => {

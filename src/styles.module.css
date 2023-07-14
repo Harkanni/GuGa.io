@@ -5,6 +5,8 @@
   font-family: Encode Sans Expanded, sans-serif;
   scroll-behavior: smooth;
   scroll-margin-top: -10rem;
+  /* border-bottom-color: ; */
+  
   /* scroll-margin: -1rem; */
 }
 
@@ -301,9 +303,6 @@ header .appHeader {
     justify-content: center;
     align-items: center;
     /* border-bottom: 3px solid #f39540 !important; */
-  }
-  .nav .navContent li .signup{
-    border-bottom: 3px solid #f39540 !important;
   }
   .nav .hambugerMenu {
     display: none;

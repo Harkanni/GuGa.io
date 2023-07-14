@@ -62,7 +62,7 @@ export const Home = ({currentSection, activeNav, showSidebar, setshowSidebar, na
         ></ProductCard>
       </>
 
-      <footer className={styles.footerContainer}>
+      <footer style={{}} className={styles.footerContainer}>
         <FooterLinks FooterData={FooterData}></FooterLinks>
 
         <FooterSocials></FooterSocials>
