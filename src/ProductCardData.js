@@ -1,5 +1,6 @@
 export const ProductCardData = [
   {
+    id: "about",
     type: 'premium guga',
     h1: 'Unlimited Guga with zero fees',
     p: 'Get access to our exclusive app that allows you to virtually interact with a real Guga.',
@@ -10,6 +11,7 @@ export const ProductCardData = [
   },
 
   {
+    id: "discover",
     type: 'Unlimited Access',
     h1: 'Login to your account at any time',
     p: 'We have you covered no matter where you are located. All you need is an internet connection and a phone or computer.',

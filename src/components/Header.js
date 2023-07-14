@@ -21,14 +21,26 @@ const Header = ({ showSidebar, setshowSidebar, navBgColor, setnavBgColor }) => {
         controls={false}
       ></video>
       <div className={styles.appHeader}>
-        <nav className={`${styles.nav} ${navBgColor ? styles.bgDark : styles.bgNone}`}>
+        <nav
+          className={`${styles.nav} ${
+            navBgColor ? styles.bgDark : styles.bgNone
+          }`}
+        >
           <div className={styles.logo}>guga</div>
           <div className={styles.navContentContainer}>
             <ul className={styles.navContent}>
-              <li>About</li>
-              <li>Discover</li>
-              <li>Services</li>
-              <li>Sign Up</li>
+              <li>
+                <a href='#about'>About</a>
+              </li>
+              <li>
+                <a href='#discover'>Discover</a>
+              </li>
+              <li>
+                <a href='#services'>Services</a>
+              </li>
+              <li>
+                <a href='#signup'>Sign Up</a>
+              </li>
             </ul>
           </div>
           <div
@@ -37,7 +49,7 @@ const Header = ({ showSidebar, setshowSidebar, navBgColor, setnavBgColor }) => {
           >
             <FontAwesomeIcon icon={faBars} style={{ color: '#ffffff' }} />
           </div>
-          <Button text={"Sign In"}></Button>
+          <Button text={'Sign In'}></Button>
         </nav>
         <div className={styles.headerContent}>
           <h1>Experience the guga</h1>

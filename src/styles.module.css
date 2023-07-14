@@ -3,6 +3,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Encode Sans Expanded, sans-serif;
+  scroll-behavior: smooth;
+  scroll-margin: -1rem;
 }
 
 body {
@@ -269,6 +271,7 @@ header .appHeader {
     left: 50%;
     transform: translateX(-50%);
     position: fixed;
+    padding-block: 0 !important;
   }
   .bgNone {
     background: none !important;
@@ -279,11 +282,22 @@ header .appHeader {
   }
   .nav .navContentContainer {
     display: block;
+    padding: 0 !important
   }
   .nav .navContent {
     display: flex;
     gap: 2rem;
     list-style: none;
+  }
+  .nav .navContent li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+    min-height: 12vh;
+    min-width: 6rem;
+    border-bottom: 3px solid #f39540;
+    cursor: pointer;
   }
   .nav .hambugerMenu {
     display: none;

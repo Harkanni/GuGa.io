@@ -3,7 +3,7 @@ import { Button } from './Button';
 
 export const ProductCard = (props) => {
   return (
-    <div className={styles.premium}>
+    <div className={styles.premium} id={props.id}>
       <div className={styles.text}>
         <h2>{props.type}</h2>
         <h3>{props.h1}</h3>
