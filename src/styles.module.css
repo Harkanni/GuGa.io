@@ -391,4 +391,10 @@ header .appHeader {
     justify-content: space-around !important;
     min-height: 35vh;
   }
+  .socialContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around !important;
+    margin-bottom: 3rem;
+  }
 }
