@@ -15,6 +15,10 @@ body {
 }
 
 /* HELPER CLASSES */
+a {
+  text-decoration: none;
+  color: #fff;
+}
 .bgNone {
   background: none !important;
 }
@@ -41,7 +45,7 @@ body {
   flex-direction: column;
   gap: 2rem;
   font-size: 1.5rem;
-  position: absolute;
+  position: fixed;
   top: 0;
   z-index: 100000;
   width: 100%;
@@ -56,12 +60,18 @@ body {
 .closeMenuButton {
   position: absolute;
   cursor: pointer;
-  right: 3%;
-  top: 3%;
+  right: 5%;
+  top: 5%;
 }
 
 .dropDownMenuSignInButton {
   margin-top: 5rem;
+  padding: .7rem 3rem;
+  border-radius: 2rem;
+  color: #000;
+  font-size: 1rem;
+  text-decoration: none;
+  background-color: #f39540;
 }
 
 header {
@@ -104,7 +114,7 @@ header .appHeader {
   cursor: pointer;
 }
 
-.nav button {
+.nav a.signIn {
   display: none;
   /* display: none !important; */
 }
@@ -320,8 +330,8 @@ header .appHeader {
   .nav .hambugerMenu {
     display: none;
   }
-  .nav button {
-    display: block;
+  .nav a.signIn {
+    display: block !important;
   }
 
   /* HEADER CONTENT */

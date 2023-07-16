@@ -4,6 +4,7 @@ import { Home } from './pages/Home';
 import { useEffect, useState } from 'react';
 import { activeNav } from './styledComponent/activeNav'
 import { handleNavigationScrolling } from './utilities/handleScroll';
+import { LoginPage } from './pages/Login';
 
 // import { useMediaQuery } from 'react-responsive';
 
@@ -57,7 +58,7 @@ function App() {
             ></Home>
           }
         ></Route>
-        <Route path='/login'></Route>
+        <Route path='/login' element={<LoginPage></LoginPage>}></Route>
       </Routes>
     </>
   );

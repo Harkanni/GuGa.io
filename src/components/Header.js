@@ -4,6 +4,7 @@ import { Button } from './Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import {  } from '@fortawesome/free-brands-svg-icons';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom'
 
 const Header = ({currentSection, activeNav, showSidebar, setshowSidebar, navBgColor, setnavBgColor }) => {
   const handleClick = (event) => {
@@ -26,7 +27,7 @@ const Header = ({currentSection, activeNav, showSidebar, setshowSidebar, navBgCo
             navBgColor ? styles.bgDark : styles.bgNone
           }`}
         >
-          <div className={styles.logo}>guga</div>
+          <Link className={styles.logo}>guga</Link>
           <div className={styles.navContentContainer}>
             <ul className={styles.navContent}>
               <li id='navItem'>
@@ -49,7 +50,10 @@ const Header = ({currentSection, activeNav, showSidebar, setshowSidebar, navBgCo
           >
             <FontAwesomeIcon icon={faBars} style={{ color: '#ffffff' }} />
           </div>
-          <Button specialStyle='smallBtn' text={'Sign In'}></Button>
+          <Link to={"/login"} className={styles.signIn}>
+            <Button specialStyle='smallBtn' text={'Sign In'}></Button>
+          </Link>
+          
         </nav>
         <div className={styles.headerContent}>
           <h1>Experience the guga</h1>
