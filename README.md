@@ -1,6 +1,7 @@
 # Getting Started with Guga.io
 
 Responsive one-page static website containing multiple sections with simple designs. Sign in page is not functional, it was implemented for learning purposes.
+
 ![alt text](https://github.com/Harkanni/GuGa.io/blob/main/src/images/Home.png?raw=true)
 
 ## Online Demo
